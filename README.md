@@ -1,6 +1,6 @@
 # Network
 
-5/ 11作成
+5 / 11作成
 
 networkフォルダ :  
 https://www.infraexpert.com/
