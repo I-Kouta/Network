@@ -185,3 +185,10 @@ IPと同様にOSI参照モデルの`ネットワークで動作する`、IPパ�
 上位層のプロトコルを識別するための番号であり、IPヘッダの8ビットの情報。プロトコル番号が6の場合はTCP、17の場合はUDP。プロトコル番号の枠は0 ~ 255
 
 <img width="600" alt="" src="./images/ヘッダフォーマット.png">
+
+- Ciscoで使用する拡張ACL
+
+拡張ACL(100 ~ 199)の`permit / deny`の後に、`ip`または`ipプロトコル番号`を入力することで、Ciscoの拡張ACLを定義できる。Cisco機器ではIPプロトコル番号を入力する代わりにキーワードを指定できる。TCP上でアクセス制限をかけたい場合、6でもTCPでも可能  
+1.`access-list 100 permit tcp any any eq www`  
+2.`access-list 100 permit 6 any any eq 80`  
+どちらも同じ効能のACLだが、1が一般的
