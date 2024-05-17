@@ -253,3 +253,9 @@ ICMPパケットの応答までに経過した時間。今回は1ミリ秒要し
 この場合はpingが失敗している。`ping 172.16.0.1`の結果、172.16.0.1からの応答はないが、代わりに192.168.0.254が応答している状態。ルータまではパケットが到達したがルーティング情報がなかったため、宛先ネットワークに対してパケット転送ができなかったことを示している
 
 <img width="600" alt="" src="./images/pingDestinationNetUnreachable.png">
+
+- Windowsのping : *Destination host unreachable*(宛先ホストに到達できません)
+
+この場合もpingが失敗している。この場合はルータまでは到達して宛先のネットワークへの到達性があるが、該当する機器(ホスト)に到達できないことを意味する。またはホストへのルーティングが見つけられないことを意味する
+
+<img width="600" alt="" src="./images/pingDestinationHostUnreachable.png">
