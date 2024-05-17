@@ -192,3 +192,9 @@ IPと同様にOSI参照モデルの`ネットワークで動作する`、IPパ�
 1.`access-list 100 permit tcp any any eq www`  
 2.`access-list 100 permit 6 any any eq 80`  
 どちらも同じ効能のACLだが、1が一般的
+
+### ICMPとは
+
+- ICMP(*Internet Control Message Protocol*)とは
+
+IPプロトコルのエラー通知や制御メッセージを転送するためのプロトコル。TCP / IPが実装されたコンピュータ間で、通信状態を確認するために使用され、インターネット層(OSI参照モデルのネットワーク層)で動作する。ネットワーク診断プログラムの`ping`や`traceroute`はICMPプロトコルを使用したプログラム
