@@ -293,3 +293,7 @@ TTLの超過によるエラーをルータからpingを実行したホストに�
 - tracerouteとは
 
 ICMPプロトコルを使用したネットワークの診断プログラム。使用するコマンドはWindowsの場合は`tracert`、Cisco機器の場合は`traceroute`というコマンド。あるホストから宛先のホストまでに到達するためにどのネットワーク経路を使用しているのかが分かり、宛先ノードまでのネクストホップアドレス(ルーティングで次にパケットを転送する隣接ルータのIPアドレス)の一覧が表示される
+
+- tracerouteが使用するプロトコル
+
+ICMPプロトコルまたはUDPプロトコルのどちらかを使用する。Windowsのtracertは`ICMPプロトコル`を使用しますが、LinuxやCisco IOSでは`UDP`を使用します。OSにより使用プロトコルは異なるので、Windowsでのtracertと、Ciscoでのtracerouteの結果が異なる場合がある
