@@ -11,3 +11,9 @@ IPアドレスによって互いの場所を識別しているため、PCとサ�
 - 2種類のIPアドレス - IPv4アドレス、IPv6アドレス
 
 IPアドレスといえば一般的に`IPv4`(*Internet Protocol version 4*)アドレスを指す。IPv4アドレスは世界的に利用者が急増したことにより割り当てるIPアドレスがなくなってきており、それを解消するために開発されたのがIPv6。現在、家庭や企業で最も使用されているのはIPv4アドレス
+
+- 自分が現在使用しているIPアドレス
+
+現在自分が使用しているIPアドレスを確認するためには、Windowsの場合は`ipconfig`と入力。この画像では`192.168.0.1`。macOSの場合は`ipconfig getifaddr en0`コマンドを入力
+
+<img width="500" alt="" src="./images/ipconfig.png">
