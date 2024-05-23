@@ -17,3 +17,7 @@ IPアドレスといえば一般的に`IPv4`(*Internet Protocol version 4*)ア�
 現在自分が使用しているIPアドレスを確認するためには、Windowsの場合は`ipconfig`と入力。この画像では`192.168.0.1`。macOSの場合は`ipconfig getifaddr en0`コマンドを入力
 
 <img width="500" alt="" src="./images/ipconfig.png">
+
+- IPアドレスの構成
+
+32ビットのIPアドレスは、`ネットワーク部`、`ホスト部`の2つで構成される。ネットワーク部は、各ホストが所属するネットワークを示し、ホスト部はネットワークに所属する各ホストを示す
