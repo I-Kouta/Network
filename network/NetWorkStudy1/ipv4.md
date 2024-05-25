@@ -66,3 +66,13 @@ IPアドレスといえば一般的に`IPv4`(*Internet Protocol version 4*)ア�
 `クラスC` : 192.168.0.0 ~ 192.168.255.255
 
 <img width="500" alt="" src="./images/IP-address.png">
+
+### VLSM / CIDR / サブネットゼロ
+
+- VLSM(*Variable Length Subnet Mask*)とは
+
+1つのIPネットワークをサブネットに分割する際に、複数の長さのサブネットマスクを利用する技術で、`可変長サブネットマスク`とも呼ばれる。クラスの概念にとらわれない`クラスレスアドレッシング`の手法の1つと言える。`効率的なアドレッシング`が実現できるが、対応していないクラスフルルーティングプロトコル(RIPv1)が稼働しているネットワークでは使用できない
+
+<img width="500" alt="" src="./images/VLSM.png">
+
+- CIDRとは
