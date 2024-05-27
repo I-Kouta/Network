@@ -157,3 +157,9 @@ NATの場合、5の処理が「内部グローバルアドレス」情報をも�
 これを`Unnumbered`によるアドレッシングをすると192.168.254.0 / 30のセグメントを割り当てることなく、R1とR2のLAN間で通信することが可能。`ip unnumbered`の後はそのルータの送信元となるIPアドレスのインターフェイスを指定する
 
 <img width="500" alt="" src="./images/unnumbered.png">
+
+- *Unnumbered*のイメージ図
+
+Unnumberedを設定することで、論理的には下図と御暗示状態になる。ただし、シリアル接続時のWANセグメントのIPセグメントがもったいないためUnnumberedを使用するのではなく、一般的にはPPPoE接続で使用することが多い
+
+<img width="500" alt="" src="./images/unnumbered-image.png">
