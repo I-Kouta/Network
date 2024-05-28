@@ -30,3 +30,17 @@ JUNOS搭載プラットフォームでは起動メディアにCF(コンパクト
 |SRX650|2GB CF|
 |SRX1400 / SRX3400 / SRX3600|1GB CF + 16GB SSD|
 |SRX5600 / SRX5800|1GB CF + 40GB HDD|
+
+- JUNOS - ディレクトリ構造
+
+FreeBSDをベースとしていることからディレクトリ構造になっている。主要なパスは以下の通り
+
+|ディレクトリ|説明|
+|----------|---|
+|`/config`|現在使用しているコンフィグと過去3世代のコンフィグの格納場所|
+|`/var/db/config`|4 ~ 49世代目のコンフィグの格納場所|
+|`/var/home`|各ユーザのホームディレクトリ|
+|`/var/tmp`|コアダンプファイルの保存先、JUNOSの変更の際の一時保存先|
+|`/var/log`|Syslogでローカルに保存するログを格納する場所、いわばdebugであるtracingファイルを保存する場所|
+|`/altroot`|*the root file system (/) is backed up to /altroot*|
+|`/altconfig`|*/config directory is backed up to /altconfig*|
