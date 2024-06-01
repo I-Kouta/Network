@@ -115,3 +115,7 @@ CiscoではNAPTをPAT(*Port Address Translation*)と呼んでおり、Linuxで�
 - イーサネット(*Ethernet*)とは
 
 コンピュータネットワークの規格のひ1つで、現在最も使用されている`LANの規格`。現在のLANにおけるコンピュータ通信では、イーサネットとTCP / IPの組み合わせが一般的。イーサネットが主に物理規格を取り決めて、TCP / IPが通信内容を取り決めているということ
+
+- CSMA / CDとは
+
+*Carrier Sense Multiple Access with Collision Detection*の略。イーサネットが採用している通信方式の1つで、初期イーサネットLANで使用されていたアクセス制御方式。10Base5、10Base2といった同軸ケーブルを使用したバス型のトポロジーや、10Base-T / 100Base-TXのケーブルの場合でも半二重通信しかサポートしないハブを使用したスター型トポロジーでも、CSMA / CD方式は使用される
