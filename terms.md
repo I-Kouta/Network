@@ -18,13 +18,13 @@
 
 現在のインターネット通信およびイントラネット通信において最も利用されている通信プロトコル。TCP / IPは複数のプロトコルからなるが、中心的な役割を果たすのがTCPとIPであることからTCP / IPと呼ばれるようになった
 
-<img width="500" alt="" src="./network/NetWorkStudy1/images/hierarchy_model.png">
+<img width="500" alt="" src="./images/hierarchy_model.png">
 
 - IP(*Internet Protocol*)とは
 
 OSI参照モデルでは`ネットワーク層`で動作し、TCP / IP階層モデルでは`インターネット層`で動作するプロトコル。IPは論理アドレス(IPアドレス)を各ノードに割り当てることで、各ノードを識別することができる。このIPアドレスの宛先を確認することで、あるノードから別のノードへデータを送信することができる。IPアドレスの宛先情報については`IPヘッダ`に含まれている
 
-<img width="400" alt="" src="./network/NetWorkStudy1/images/IPヘッダ.png">
+<img width="400" alt="" src="./images/IPヘッダ.png">
 
 - ARP(*Address Resolution Protocol*)とは
 
@@ -111,3 +111,7 @@ CiscoではNAPTをPAT(*Port Address Translation*)と呼んでおり、Linuxで�
 - *IP Unnumbered*とは
 
 `WAN側にIPアドレスを割り当てずにLAN側のIPアドレスを借りる設定`のこと。IPアンナンバードにより、ルータのWAN側ポートにIPアドレスを割り当てることなくLAN側ポートだけにIPアドレスを割り当てることで、2台のルータをまるで1台のルータのように扱うことも可能。この技術を使用することで、割り当てるIPアドレスを節約することができる。下図ではWAN側に192.168.254.0 / 30のセグメントを割り振っている
+
+- イーサネット(*Ethernet*)とは
+
+コンピュータネットワークの規格のひ1つで、現在最も使用されている`LANの規格`。現在のLANにおけるコンピュータ通信では、イーサネットとTCP / IPの組み合わせが一般的。イーサネットが主に物理規格を取り決めて、TCP / IPが通信内容を取り決めているということ
